@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ShipperStateService } from '../../services/shipper-state/shipper-state.service';
 import { RouteDataService } from '../../services/route-data/route-data.service';
 import { RouteData } from '../../models/route-model';
@@ -8,7 +8,6 @@ import { Subscription } from 'rxjs';
   selector: 'app-shipper',
   templateUrl: './shipper.component.html',
   styleUrls: ['./shipper.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ShipperComponent implements OnInit, OnDestroy {
   routes: RouteData[] = [];
