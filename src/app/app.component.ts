@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  template: `<app-shipper></app-shipper>`
 })
 export class AppComponent {
   title = 'route-visualizer';
