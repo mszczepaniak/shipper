@@ -25,6 +25,14 @@
   vertical-align: middle;
 }
 
+.legend-red {
+  background-color: #ff0000
+}
+
+.legend-green {
+  background-color: #008000
+}
+
 .legend div {
   display: flex;
   align-items: center;
@@ -51,13 +59,6 @@
     rgb(255, 0, 0),
     rgb(128, 0, 0)
   );
-}
-
-.labels {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 5px;
-  font-size: 14px;
 }
 
 .note {
