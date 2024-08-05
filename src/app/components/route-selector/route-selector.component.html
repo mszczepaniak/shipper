@@ -1,0 +1,14 @@
+<div class="select-route">
+  <ng-select
+    id="e2e-route-selector"
+    class="select-route-dropdown"
+    [(ngModel)]="selectedRoute"
+    placeholder="Please select route"
+    (change)="onRouteSelect($event)"
+  >
+    <ng-option *ngFor="let item of routes" [value]="item">
+      {{ item.fromPort }} to {{ item.toPort }} ({{ item.routeId }})
+    </ng-option>
+  </ng-select>
+  <button id="e2e-reset-button" (click)="resetRoute()">Reset</button>
+</div>
