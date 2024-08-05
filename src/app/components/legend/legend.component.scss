@@ -36,17 +36,17 @@
 .legend div {
   display: flex;
   align-items: center;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
-.speed-legend {
+.legend-speed {
   width: 200px;
   margin: 10px 0;
   display: flex;
   gap: 6px;
 }
 
-.gradient-bar {
+.legend-speed-gradient {
   height: 20px;
   width: 100px;
   margin-top: 4px;
@@ -61,6 +61,6 @@
   );
 }
 
-.note {
+.legend-note {
   font-size: 10px;
 }

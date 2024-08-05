@@ -36,14 +36,14 @@ describe('RouteDataService', () => {
 
   it('should load routes from CSV', (done) => {
     const mockCSV = `route_id,from_port,to_port,leg_duration,points
-1,Port A,Port B,10h,"[[0,0,0,10],[1,1,3600000,15]]"`;
+1,Port A,Port B,10,"[[0,0,0,10],[1,1,3600000,15]]"`;
 
     const expectedRoutes = [
       {
         routeId: '1',
         fromPort: 'Port A',
         toPort: 'Port B',
-        legDuration: '10h',
+        legDuration: '10',
         points: [
           { longitude: 0, latitude: 0, timestamp: 0, speed: 10 },
           { longitude: 1, latitude: 1, timestamp: 3600000, speed: 15 },
@@ -58,7 +58,7 @@ describe('RouteDataService', () => {
             route_id: '1',
             from_port: 'Port A',
             to_port: 'Port B',
-            leg_duration: '10h',
+            leg_duration: '10',
             points: '[[0,0,0,10],[1,1,3600000,15]]',
           },
         ],
