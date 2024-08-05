@@ -32,7 +32,7 @@ describe('ShipperStateService', () => {
       routeId: '1',
       fromPort: 'A',
       toPort: 'B',
-      legDuration: '10h',
+      legDuration: '10',
       points: [],
     };
     service.setSelectedRoute(mockRoute);
@@ -48,14 +48,14 @@ describe('ShipperStateService', () => {
         routeId: '1',
         fromPort: 'A',
         toPort: 'B',
-        legDuration: '10h',
+        legDuration: '10',
         points: [],
       },
       {
         routeId: '2',
         fromPort: 'C',
         toPort: 'D',
-        legDuration: '5h',
+        legDuration: '5',
         points: [],
       },
     ];
