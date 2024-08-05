@@ -1,0 +1,65 @@
+.legend {
+  display: none;
+  @media screen and (min-width: 500px) {
+    display: block;
+  }
+
+  position: absolute;
+  bottom: 50px;
+  left: 10px;
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.legend h3 {
+  margin: 0 0 10px;
+}
+
+.legend-color {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.legend div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.speed-legend {
+  width: 200px;
+  margin: 10px 0;
+  display: flex;
+  gap: 6px;
+}
+
+.gradient-bar {
+  height: 20px;
+  width: 100px;
+  margin-top: 4px;
+  background: linear-gradient(
+    to right,
+    rgb(0, 128, 0),
+    rgb(0, 255, 0),
+    rgb(255, 255, 0),
+    rgb(255, 128, 0),
+    rgb(255, 0, 0),
+    rgb(128, 0, 0)
+  );
+}
+
+.labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.note {
+  font-size: 10px;
+}
